@@ -22,12 +22,19 @@ disableKinds: ["taxonomy", "taxonomyTerm"]
 baseURL: "https://docs.upsun.com"
 
 summaryLength: 3
+outputFormats:
+  SingleMarkdown:
+    mediaType: "text/markdown"
+    baseName: "singlemarkdown"
+    isPlainText: true
+    notAlternative: true
 
 outputs:
     home:
       - HTML
       - JSON
       - RSS
+      - SingleMarkdown
     section:
       - HTML
       - RSS
